@@ -73,11 +73,20 @@ export default function App() {
   );
 }
 
+/**
+ * NavBar Component
+ *
+ * A navigation bar component that displays a logo and children elements.
+ *
+ * @param {Object} props - The properties passed to the NavBar component.
+ * @param {ReactNode} props.children - The child elements to be rendered within the navigation bar.
+ * @returns {JSX.Element} - The rendered NavBar component.
+ */
 function NavBar({ children }) {
   return (
     <nav className="nav-bar">
-      <Logo />
-      {children}
+      <Logo /> {/* Render the Logo component */}
+      {children} {/* Render the children elements */}
     </nav>
   );
 }
