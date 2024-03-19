@@ -91,11 +91,18 @@ function NavBar({ children }) {
   );
 }
 
+/**
+ * Logo Component
+ *
+ * A component that renders a logo with the usePopcorn title.
+ *
+ * @returns {JSX.Element} - The rendered Logo component.
+ */
 function Logo() {
   return (
     <div className="logo">
-      <span role="img">🍿</span>
-      <h1>usePopcorn</h1>
+      <span role="img">🍿</span> {/* Render the popcorn emoji */}
+      <h1>usePopcorn</h1> {/* Render the usePopcorn title */}
     </div>
   );
 }
