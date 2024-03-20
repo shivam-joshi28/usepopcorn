@@ -107,6 +107,15 @@ function Logo() {
   );
 }
 
+/**
+ * NumResults Component
+ *
+ * Renders the number of results found based on the length of the movies array.
+ *
+ * @param {Object} props - Component props
+ * @param {Array} props.movies - An array of movie objects
+ * @returns {JSX.Element} - Rendered component displaying the number of results
+ */
 function NumResults({ movies }) {
   return (
     <p className="num-results">
